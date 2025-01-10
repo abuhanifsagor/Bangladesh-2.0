@@ -26,7 +26,7 @@
     /*INFO:background colors*/
     --color-bg-light-green: rgb(198, 228, 214);
     --color-bg-light-blue: rgba(84, 144, 245, 0.2);
-    -color-bg-light-yellow: rgb(247, 235, 207);
+    --color-bg-light-yellow: rgb(247, 235, 207);
 
     /*INFO:transition time*/
     --transition: 0.3s ease;
@@ -40,10 +40,14 @@
     height: auto;
  }
 section{
-    padding: 80px 0;
+    padding: 50px 0;
+    margin:0 25px;
 }
 a{
     text-decoration: none;
+}
+p{
+    color: var(--color-p) !important;
 }
 li{
     list-style: none;
@@ -54,6 +58,12 @@ li{
     max-width: 1280px;
     margin: auto;
 }
+.container_tittle{
+    text-align: left;
+    font-size: 32px;
+    color: var(--color-tittle);
+    font-weight: 700;
+    margin-bottom: 20px;}
 .mybtn{
     padding: 10px 20px;
     border-radius: 7px;
@@ -61,6 +71,7 @@ li{
     font-weight: 500;
     border: none;
     cursor: pointer;
+    transition: var(--transition);
     a{
         color: white;
     }
@@ -86,6 +97,10 @@ li{
 nav{
     padding: 25px 50px;
     background: var(--color-white);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 9999;
 }
 .navContainer{
     display: flex;
@@ -159,3 +174,117 @@ nav{
     }
 
 }
+
+/*TODO: FULL CARD SECTION CSS*/
+
+.warp_box{
+    padding: 20px;
+    border-radius: 15px;
+    transition: var(--transition);
+    img{
+        width: 50px;
+        height: 50px;
+    }
+    h4{
+        font-size: 18px;
+        margin: 10px 0;
+    }
+    p{
+        color: var(--color-p);
+        line-height: 25px;
+        font-size: 15px;
+    }
+}
+
+/*INFO: PILLARS CSS*/
+.pillars_card{
+    max-width: 305px;
+    background: var(--color-white);
+    box-shadow: 8px 10px 10px rgba(0, 0, 0, 0.096),  -8px -10px 10px rgb(255, 255, 255);
+    
+    &:hover{
+        transform: translateY(-5px);
+    }
+}
+.pillars_warper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/*INFO: THE VISION OF Future CSS*/
+.vision_card button{
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    a{
+        color: black;
+    }
+    &:hover{
+        a{
+            color: var(--color-white);
+        }
+        z-index: 5;
+    }
+}
+.vision_card button:hover::before{
+    width: 100%;
+    
+}
+.vision_card button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    transition: 0.4s;
+    z-index: -1;
+}
+.vision_card{
+    max-width: 413px;
+    height: 300px;
+    line-height: 50px;
+    img{
+        width: 60px;
+        height: 60px;
+    }
+    h4{
+        font-size: 25px;
+    }
+    &:nth-child(1){
+        background: var(--color-bg-light-blue);
+        button{
+            border: 1px solid var(--color-button-blue);
+        }
+    }
+    &:nth-child(2){
+        background: var(--color-bg-light-green);
+        button{
+            border: 1px solid var(--color-button-green);
+        }
+
+    }
+    &:nth-child(3){
+        background: var(--color-bg-light-yellow);
+        button{
+            border: 1px solid var(--color-button-yellow);
+        }
+    }
+}
+.blueBtn::before{
+    background-color: var(--color-button-blue);
+}
+.GreenBtn::before{
+    background-color: var(--color-button-green);
+    transform: var(--transition) !important;
+
+}
+.yellowBtn::before{
+    background-color: var(--color-button-yellow);
+}
+
