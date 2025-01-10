@@ -159,6 +159,7 @@ nav{
     }
     .heroBtn{
         margin-top: 20px;
+        padding: 12px 20px;
         background-color: var(--color-button-green);
         transition: var(--transition);
         &:hover{
@@ -288,3 +289,22 @@ nav{
     background-color: var(--color-button-yellow);
 }
 
+/*TODO: FULL  CARD SECTION END */
+
+/*INFO:Muhammad Yunus Quotes*/
+.Quotes{
+    background: var(--color-white);
+    background-image: url("assets/quote-bg.png");
+    background-repeat: no-repeat;
+    background-position: 20px 33px;
+    background-size: 40px 40px;
+    padding: 50px 20px;
+    h4{
+        font-size: 25px;
+        color: var(--color-sub-tittle);
+    }
+    span{
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.438);
+    }
+}
