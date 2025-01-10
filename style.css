@@ -58,9 +58,12 @@ li{
     padding: 10px 20px;
     border-radius: 7px;
     color: var(--color-white);
-    font-weight: 600;
+    font-weight: 500;
     border: none;
     cursor: pointer;
+    a{
+        color: white;
+    }
 }
 /* .mybtn:hover{
     
@@ -95,7 +98,7 @@ nav{
     }
 }
 .singbtn{
-    border: 1px solid var(--color-button-green);
+    
     transition: var(--transition);
     &:hover{
         background-color: var(--color-button-green);
@@ -107,4 +110,52 @@ nav{
         color: var(--color-button-green);
         font-weight: 600;
     }
+}
+
+/*INFO: HERO SECTION CSS*/
+
+.heroContainer{
+    padding: 30px 40px;
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-bg-light-green);
+    border-radius: 15px;
+}
+.heroContent{
+    line-height: 50px;
+    h4{
+        font-size: 22px;
+        font-weight: 600;
+        color: var(--color-p);
+    }
+    h1{
+        font-size: 38px;
+        line-height: 55px;
+        font-weight: 700;
+        color: var(--color-tittle);
+        a{
+            color: var(--color-black);
+            transition: var(--transition);
+            &:hover{
+                color: var(--color-button-green);
+            }
+        }
+    }
+    .heroBtn{
+        margin-top: 20px;
+        background-color: var(--color-button-green);
+        transition: var(--transition);
+        &:hover{
+            background-color: var(--color-button-light-green);
+        }
+    }
+}
+.heroImages{
+    width: 450px;
+    overflow: hidden;
+    img{
+        width: 100%;
+    }
+
 }
