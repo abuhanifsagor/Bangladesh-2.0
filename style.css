@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans';
+}
+
+:root{
+
+    /*INFO: main colors*/
+    --body-color: rgb(245, 245, 245);
+    --color-white: rgb(255, 255, 255);
+    --color-black: #000;
+    --color-tittle:  rgb(14, 14, 14);
+    --color-sub-tittle: rgba(14, 14, 14, 0.8);
+    --color-p:  rgba(14, 14, 14, 0.7);
+
+    /*INFO:button colors*/
+    --color-button-green:   rgb(0, 106, 80);
+    --color-button-light-green: rgb(9, 161, 92);
+    --color-button-blue: rgb(84, 144, 245);
+    --color-button-yellow: rgb(255, 194, 57);
+
+    /*INFO:background colors*/
+    --color-bg-light-green: rgb(198, 228, 214);
+    --color-bg-light-blue: rgba(84, 144, 245, 0.2);
+    -color-bg-light-yellow: rgb(247, 235, 207);
+
+    /*INFO:transition time*/
+    --transition: 0.3s ease;
+
+} 
+
+ /*INFO:common tag css*/
+ body{
+    background-color: var(--body-color);
+    width: 100%;
+    height: auto;
+ }
+section{
+    padding: 80px 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+/*INFO: my class css*/
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+.mybtn{
+    padding: 10px 20px;
+    border-radius: 7px;
+    color: var(--color-white);
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+/* .mybtn:hover{
+    
+} */
+
+
+
+
+/* TODO: pages css start*/
+
+
+
+
+
+
+
+
+/*INFO: NAVBAR CSS*/
+
+nav{
+    padding: 25px 50px;
+    background: var(--color-white);
+}
+.navContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .navBrands h2{
+    font-size: 32px;
+    color: var(--color-tittle);
+    font-weight: 700;
+    }
+}
+.singbtn{
+    border: 1px solid var(--color-button-green);
+    transition: var(--transition);
+    &:hover{
+        background-color: var(--color-button-green);
+        a{
+            color: var(--color-white);
+        }
+    }
+    a{
+        color: var(--color-button-green);
+        font-weight: 600;
+    }
+}
