@@ -37,6 +37,9 @@ body {
   background-color: var(--body-color);
   width: 100%;
   height: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  overflow-Y: scroll;
 }
 section {
   padding: 50px 0;
@@ -131,6 +134,9 @@ nav {
   align-items: center;
   background: var(--color-bg-light-green);
   border-radius: 15px;
+}
+.heroContent2{
+    display: none;
 }
 .heroContent {
   line-height: 50px;
@@ -517,5 +523,104 @@ input[type="text"] {
     }
 }
 footer{
-    padding: 80px 0px 50px;
+    padding: 30px 0px;
+    background: var(--color-white);
+    hr{
+        width: 60%;
+        margin: 15px auto;
+        opacity: .4;
+   }
+   .social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+   }
+}
+
+/* TODO: RESPONSIVE */
+@media screen and (max-width: 768px) {
+    nav{
+        padding: 25px 20px;
+    }
+    
+    .opinionContainer {
+        padding: 20px;
+      }
+      .opinionContainer table {
+
+        th,
+        td {
+          padding: 12px;
+          display: flex;
+        }
+        th {
+          font-size: 20px;
+          &:nth-child(2){
+            display: none;
+          }
+        }
+      }
+      select {
+        padding: 8px 8px;
+      }
+
+
+      .heroContainer {
+        padding: 20px ;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .heroContent {
+        text-align: center;
+        margin: 0 auto;
+        h1 {
+          font-size: 25px;
+          line-height: 40px;
+        }
+        .heroBtn {
+            font-size: 12px;
+          margin-top: 15px;
+          padding: 12px 15px;
+        }
+      }
+      .heroImages {
+        display: none;
+      }
+
+      .container_tittle{
+        font-size: 25px;
+      }
+      .vision_card{
+        line-height: 30px;
+      }
+      .News_card{
+        flex-direction: column;
+        &:nth-child(2){
+          flex-direction: column-reverse;
+      }
+      .newsImages {
+        width: 100%;
+      }
+      .newsContent {
+        width: 100%;
+      }
+    }
+    .donate_input{
+        width: 28%;
+    }
+    .donate_input:focus{
+        width: 80%;
+    }
+    .tittle{
+        font-size: 25px;
+    }
+
+
+
+
+
+
+
 }
