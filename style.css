@@ -235,6 +235,7 @@ nav {
 }
 .vision_card button:hover::before {
   width: 100%;
+  z-index: -3;
 }
 .vision_card button::before {
   content: "";
@@ -244,7 +245,7 @@ nav {
   width: 0%;
   height: 100%;
   transition: 0.4s;
-  z-index: -1;
+  
 }
 .vision_card {
   max-width: 413px;
